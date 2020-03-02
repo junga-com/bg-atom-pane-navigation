@@ -1,14 +1,11 @@
 {
-  "name": "bg-nav-docks",
-  "main": "./lib/bg-nav-docks",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "name": "bg-atom-pane-navigation",
+  "main": "./lib/bg-atom-pane-navigation",
+  "version": "1.0.0",
+  "description": "Enhances navigation between Panes by auto opening Docks as needed",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "bg-nav-docks:toggle"
-  },
-  "repository": "https://github.com/atom/bg-nav-docks",
+  "repository": "https://github.com/bobgjunga/bg-atom-pane-navigation",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
