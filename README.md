@@ -1,9 +1,9 @@
-# BG Pane Navigation Package
+&lt;# BG Pane Navigation Package
 
 The principle feature is that it traps the atom window:focus-pane-* navigation commands provided by Atom core and makes them reveal
 (aka open) the Dock in the direction of navigation if that Dock is hidden and there is no pane in that direction to go to.
 
-This package works to enhance the default keymap but I also suggest below a keymap that I personally use for good, consistent pane navigation.
+This package works to enhance the default keymap but I also suggest a keymap that I personally use that you might want to consider. I hold down the alt key and use &lt;arrows>,pgUp,pgDn, and w to navigate to any WorkspaceItem and close it if needed.
 
 #### Pane and PaneItem Navigation Commands
 In addition to documenting what this package provides, this table serves as a reference for the commands needed to navigate to any
@@ -15,8 +15,8 @@ WorkspaceItem (aka tab) in the workspace.
 |changed by this pkg |`focus-pane-below`       |ctrl-k ctrl-down  | alt-down  | enhanced to open the Dock when needed
 |changed by this pkg |`focus-pane-on-left`     |ctrl-k ctrl-left  | alt-left  | enhanced to open the Dock when needed
 |changed by this pkg |`focus-pane-on-right`    |ctrl-k ctrl-right | alt-right | enhanced to open the Dock when needed
-|<reference>         |`pane:show-previous-item`|`ctrl-pageup`  |`alt-pageup`  | cycle through tabs in the current Pane
-|<reference>         |`pane:show-next-item`    |`ctrl-pagedown`|`alt-pagedown`| cycle through tabs in the current Pane
+|&lt;reference>         |`pane:show-previous-item`|`ctrl-pageup`  |`alt-pageup`  | cycle through tabs in the current Pane
+|&lt;reference>         |`pane:show-next-item`    |`ctrl-pagedown`|`alt-pagedown`| cycle through tabs in the current Pane
 |provided by this pkg|`bg:hideActiveDock`      |none              | alt-w     | hide the dock that contains the focus
 |suggested keymap change |`core:close`         |ctrl-w            | ctrl-w    | Change its behavior when a Dock has the focus
 
@@ -37,6 +37,12 @@ might inspire you to modify your keymap in another way.
 To use the alt-[arrows,pageUp/Down,w] keys globally, I had to unset the use of some keys in the tree-view and text-editor. I don't
 use those functions but they might be important to you so YMMV.
 
+Press and hold alt to enter pane naviagtion mode.
+* up,down.left,right navigates to any pane
+* pageUp,pageDown navigates withing a pane to the WorkspaceItem (aka tab)
+* w will hide or close the currently focused thing
+  
+
 	# Global keymaps to implement navigation between Panes and Items within them using the alt- modifier
 	'.platform-linux atom-workspace':
 	  'alt-up':       'window:focus-pane-above'
@@ -54,7 +60,7 @@ use those functions but they might be important to you so YMMV.
 	'.platform-linux atom-dock':
 	  'ctrl-w': 'bg:hideActiveDock'
 	    
-	#unset use of alt-<arrow keys> by tree-view and atom-text-editor so that we can use them to navigate between panes
+	#unset use of alt-&lt;arrow keys> by tree-view and atom-text-editor so that we can use them to navigate between panes
 	'.platform-linux .tree-view, .platform-linux atom-workspace atom-text-editor:not(.mini)':
 	  'alt-up':    'unset!'
 	  'alt-down':  'unset!'
@@ -67,11 +73,11 @@ I personally like having one consistent set of navigation keys to navigate betwe
 alt-[arrows,pageUp/Down,w] to do this so that I can hold down alt to enter a sort of navigation mode to get around the workspace and
 tidy up Docks to give WorkspaceCenter more room when needed. 
 
-Using the alt-<arrow> keys conflicts with the tree-view and atom-text-editor use of those keys but I prefer the consistent pane navigation
+Using the alt-&lt;arrow> keys conflicts with the tree-view and atom-text-editor use of those keys but I prefer the consistent pane navigation
 over those functions.
 
 I use alt even though ctrl-pageUp/Dn and ctrl-w are ubiquitous for tab navigation and closing tabs because ctrl-[arrows] is also
-ubiquitous for text navigation within the editor view. 
+ubiquitous for text navigation within the editor view so ctrl-&lt;arrow> can not be used.
 
 My alt-pageUp/Dn are aliases for ctrl-pageUp/Down. I still use the ctrl variants since browsers and other applications make that second
 nature but the alt variants make it so that while I am navigating to a pane, I dont have to change the modifier key to select the
