@@ -42,6 +42,7 @@ Press and hold alt to enter pane naviagtion mode.
 * pageUp,pageDown navigates withing a pane to the WorkspaceItem (aka tab)
 * w will hide or close the currently focused thing
   
+keymaps.cson
 
 	# Global keymaps to implement navigation between Panes and Items within them using the alt- modifier
 	'.platform-linux atom-workspace':
