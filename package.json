@@ -1,7 +1,7 @@
 {
   "name": "bg-pane-navigation",
   "main": "./lib/bg-pane-navigation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Enhances navigation between Panes by auto opening Docks in the pane navigation commands when they reach the edge",
   "keywords": [
     "pane",
