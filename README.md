@@ -20,11 +20,18 @@ WorkspaceItem (aka tab) in the workspace.
 |provided by this pkg|`bg:hideActiveDock`      |none              | alt-w     | hide the dock that contains the focus
 |suggested keymap change |`core:close`         |ctrl-w            | ctrl-w    | Change its behavior when a Dock has the focus
 
+The new `bg:hideActiveDock` command looks to see which pane container has the user's focus. It will either be the WorkspaceCenter
+or one of the three (left, right, bottom) Docks that neighbor it. If the focus is one of the Docks, the command will hide that Dock.
+Note that the Dock can contain multiple panes, each with an active, visible tab and they will all be hidden. This is the correct
+behavior for my workflow.
+
+If the user's focus is in the WorkspaceCenter, the behavior of bg:hideActiveDock is determined by the current value of the configuration
+setting. If true, it will close the active pane. If false, it will do nothing.
 
 #### keymaps
 This package does not provide any keymap so that the user can decide how to use their keyboard.
 
-Here is the relevant portion of my keymap.cson that you may find useful to copy into your keymap.cson (menu:Edit->Keymap...) or it
+Here is the relevant portion of my keymap.cson that you may find useful to merge into your keymap.cson (menu:Edit->Keymap...) or it
 might inspire you to modify your keymap in another way.
 
 To use the alt-[arrows,pageUp/Down,w] keys globally, I had to unset the use of some keys in the tree-view and text-editor. I don't
