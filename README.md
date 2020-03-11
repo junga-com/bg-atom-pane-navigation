@@ -1,4 +1,4 @@
-&lt;# BG Pane Navigation Package
+# BG Pane Navigation Package
 
 The principle feature is that it traps the atom window:focus-pane-* navigation commands provided by Atom core and makes them reveal
 (aka open) the Dock in the direction of navigation if that Dock is hidden and there is no pane in that direction to go to.
