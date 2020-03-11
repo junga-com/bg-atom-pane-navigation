@@ -1,22 +1,21 @@
 {
   "name": "bg-pane-navigation",
   "main": "./lib/bg-pane-navigation",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Enhances navigation between Panes by auto opening Docks in the pane navigation commands when they reach the edge",
   "keywords": [
-      "pane",
-      "navigation",
-      "docks",
-      "window:focus-pane-on-left",
-      "window:focus-pane-on-right",
-      "window:focus-pane-below",
-      "window"
+    "pane",
+    "navigation",
+    "docks",
+    "window:focus-pane-on-left",
+    "window:focus-pane-on-right",
+    "window:focus-pane-below",
+    "window"
   ],
   "repository": "https://github.com/junga-com/bg-atom-pane-navigation",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
