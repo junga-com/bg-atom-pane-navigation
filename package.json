@@ -1,12 +1,14 @@
 {
   "name": "bg-pane-navigation",
-  "main": "./lib/bg-pane-navigation",
+  "main": "esmToCjsPkgBridge.js",
+  "module": "./lib/bg-pane-navigation",
   "version": "0.6.0",
   "description": "Enhances navigation between Panes by auto opening Docks in the pane navigation commands when they reach the edge",
   "keywords": [
     "pane",
     "navigation",
     "docks",
+    "alt-arrow",
     "window:focus-pane-on-left",
     "window:focus-pane-on-right",
     "window:focus-pane-below",
@@ -17,5 +19,8 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bg-atom-utils": "file:../bg-atom-utils",
+    "esm": "^3.2.25"
+  }
 }
