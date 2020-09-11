@@ -12,15 +12,24 @@
     "window:focus-pane-on-left",
     "window:focus-pane-on-right",
     "window:focus-pane-below",
-    "window"
+    "window",
+    "bg"
   ],
-  "repository": "https://github.com/junga-com/bg-atom-pane-navigation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junga-com/bg-atom-pane-navigation"
+  },
+  "author": "Robert E. Griffith <npmjs@junga.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junga-com/bg-atom-pane-navigation/issues"
+  },
+  "homepage": "https://github.com/junga-com/bg-atom-pane-navigation#readme",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "bg-atom-utils": "file:../bg-atom-utils",
+    "bg-atom-utils": "^2.2.2",
     "esm": "^3.2.25"
   }
 }
