@@ -2,7 +2,7 @@
   "name": "bg-pane-navigation",
   "main": "esmToCjsPkgBridge.js",
   "module": "./lib/bg-pane-navigation",
-  "version": "0.6.0",
+  "version": "2.0.0",
   "description": "Enhances navigation between Panes by auto opening Docks in the pane navigation commands when they reach the edge",
   "keywords": [
     "pane",
