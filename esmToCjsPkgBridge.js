@@ -10,3 +10,7 @@ require = global.__bgEsmModule__(module/* , options */);
 
 // atom does not expect the export of plugins to in the 'default' property so dereference .default in this assignment.
 module.exports = require(require('./package.json').module).default
+
+module.atomPackageName = module.id
+					.replace(/(\/lib)?\/[^\/]*$/,"")
+					.replace(/^.*\//,"");
